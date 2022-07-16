@@ -1,0 +1,56 @@
+.Glass-container {
+	max-width: 600px;
+	max-height: 400px;
+
+	font-family: "Long Cang", cursive;
+	padding: 20px 20px;
+	color: rgba($color: #000000, $alpha: 1);
+	background-color: rgba(255, 255, 255, $alpha: 0.1);
+	box-shadow: -25px 25px 45px rgba($color: #ffffff, $alpha: 0.2);
+	border: 1px solid rgba($color: #ffffff, $alpha: 0.5);
+	border-right: 1px solid rgba($color: #ffffff, $alpha: 0.3);
+	border-bottom: 1px solid rgba($color: #ffffff, $alpha: 0.3);
+	margin-bottom: 50px;
+	border-radius: 15px;
+	z-index: 5;
+
+	.cardWrapper {
+		display: grid;
+		grid-template-rows: 2fr 3fr 1fr;
+		grid-template-columns: 1fr 2fr 1fr;
+
+		background-color: rgba(0, 0, 0, 0.1);
+		padding: 5px 20px 30px;
+		border-radius: 15px;
+
+		&:hover {
+			background-color: rgba($color: #a2d2ff, $alpha: 0.5);
+		}
+
+		.glassTitle {
+			grid-column-start: 2;
+			grid-column-end: 3;
+			grid-row-start: 1;
+			grid-row-end: 2;
+
+			font-size: 2rem;
+			text-align: center;
+		}
+
+		.glassDescription {
+			grid-column-start: 1;
+			grid-column-end: 4;
+			grid-row-start: 2;
+			grid-row-end: 3;
+
+			font-size: 1.2rem;
+		}
+
+		.glassDate {
+			grid-column-start: 3;
+			grid-column-end: 4;
+			grid-row-start: 3;
+			grid-row-end: 4;
+		}
+	}
+}

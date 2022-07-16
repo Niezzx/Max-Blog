@@ -1,0 +1,114 @@
+@mixin checked-mixin {
+	text-align: center;
+	color: #fff;
+	border-radius: 5px;
+	width: 130px;
+	height: 40px;
+	padding: 10px 25px;
+	font-family: sans-serif;
+	font-weight: 500;
+	float: right;
+}
+
+.futureList {
+	font-family: "Shadows Into Light", cursive;
+	margin-top: 200px;
+	background: #55b6ae;
+
+	h2 {
+		font-size: 2rem;
+		font-family: fantasy;
+		background: #caf0f8;
+		padding: 40px;
+		margin: 0;
+		color: #333;
+		text-align: center;
+
+		.emphasis {
+			font-family: "Vast Shadow", cursive;
+			font-size: 4rem;
+			margin: 0 20px;
+			font-weight: 400;
+		}
+	}
+
+	ul {
+		width: 100%;
+		margin-top: 20px;
+
+		li {
+			font-family: "Pacifico", "Liu Jian Mao Cao", cursive;
+			font-size: 2em;
+			padding: 30px;
+			margin: 20px 0;
+			background: #ade8f4;
+			list-style-type: none;
+		}
+
+		li input[type="checkbox"] {
+			width: 40px;
+		}
+
+		.done-true {
+			text-decoration: line-through;
+			color: #eee;
+		}
+
+		.Checked {
+			@include checked-mixin;
+			background: linear-gradient(
+				0deg,
+				rgba(255, 151, 0, 1) 0%,
+				rgba(251, 75, 2, 1) 100%
+			);
+		}
+		.UnChecked {
+			@include checked-mixin;
+			background: rgb(0, 172, 238);
+		}
+	}
+
+	form {
+		display: grid;
+		grid-template-areas:
+			"input button"
+			"completed completed";
+		grid-template-columns: 3fr 2fr;
+		row-gap: 20px;
+
+		.add-input {
+			grid-area: input;
+			height: 100px;
+			border: none;
+			padding: 40px 10px;
+			font-size: 2em;
+			font-family: megrim, fantasy, "Zhi Mang Xing";
+			text-indent: 55px;
+		}
+
+		.add-btn {
+			grid-area: button;
+			border: none;
+			background: #29f4e3;
+			padding: 0;
+			height: 100px;
+			h2 {
+				background: #29f4e3;
+				padding: 0;
+				font-size: 2rem;
+				font-family: megrim, fantasy;
+				color: #333;
+			}
+		}
+
+		.clear-btn {
+			grid-area: completed;
+			border: none;
+			height: 100px;
+			background: #13756d;
+			font-size: 2em;
+			font-family: megrim, fantasy;
+			color: #aaa;
+		}
+	}
+}

@@ -1,0 +1,33 @@
+.Navbar-nav {
+	display: grid;
+	grid-template-columns: 3fr 1fr 1fr 1fr;
+	column-gap: 50px;
+
+	background-color: hsla(60, 10%, 92%, 0.5);
+	width: 100%;
+	height: 120px;
+	padding: 20px;
+
+	li {
+		list-style: none;
+
+		&:first-child {
+			padding-left: 50px;
+		}
+
+		a {
+			text-decoration: none;
+			color: #6c584c;
+			font-size: 18px;
+			font-family: "Zhi Mang Xing", cursive;
+			text-align: center;
+			line-height: 4;
+		}
+	}
+
+	.current-position {
+		transform: scale(2);
+		font-weight: 400;
+		color: #adc178;
+	}
+}

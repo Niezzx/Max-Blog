@@ -1,0 +1,27 @@
+.Article {
+	background-color: #ccd5ae;
+	.article-content {
+		display: flex;
+
+		.articleSide {
+			flex: 1.5 0 auto;
+
+			background-color: #e9edc9;
+		}
+
+		.articleSection {
+			flex: 2 0 auto;
+
+			padding: 50px 10%;
+
+			.articleMain {
+				display: flex;
+				flex-direction: column;
+
+				.label-right {
+					align-self: flex-end;
+				}
+			}
+		}
+	}
+}

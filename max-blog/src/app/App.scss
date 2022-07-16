@@ -1,0 +1,38 @@
+/* font-family: 'Shadows Into Light', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+/* font-family: 'Liu Jian Mao Cao', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap");
+/* font-family: 'Long Cang', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Long+Cang&display=swap");
+/* font-family: 'Zhi Mang Xing', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap");
+/* font-family: 'Vast Shadow', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap");
+/* font-family: 'Pacifico', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+/* font-family: 'Megrim', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Megrim&display=swap");
+
+* {
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.App {
+	min-width: 100vw;
+	background-size: cover;
+}
